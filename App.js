@@ -11,6 +11,13 @@ export default function App() {
   
   return (
     <View styles={{flex: 1, backgroundColor: 'orange'}}>
+     <NavigationContainer>
+        <Stack.Navigator initialRouteName="Login">
+          <Stack.Screen name="Home" component="Home"/>
+          <Stack.Screen name = "Login" component ={Login}/>
+        </Stack.Navigator>
+      </NavigationContainer>
+    
      
 
     </View>
